@@ -1,0 +1,53 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* classe per il body */
+body{
+    background-color: #083b4c;
+    font-size: 1.5rem;
+}
+/* classe per il titolo della pagina */
+h1{
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+}
+/* classe per il container */
+.container {
+    width: 80%;
+    margin: 2rem auto;
+}
+/* classe per la row */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* classe per i quadrati dei numeri */
+.square {
+    width: calc(100% / 8);
+    aspect-ratio: 1;
+    border: 1px solid black;
+    display: flex;
+    margin: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+/* classe per i numeri che non sono multipli ne di 3 e ne di 5 */
+.none{
+    background-color: #1389b2;
+}
+/* classe per i numeri multipli di 3 */
+.fizz{
+    background-color:#0bd6a1;
+}
+/* classe per i numeri multipli di 5 */
+.buzz{
+    background-color: #ffd166;
+}
+/* classe per i numeri multipli di 3 e 5 */
+.fizzBuzz{
+    background-color: #f0466f;
+}
