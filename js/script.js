@@ -14,29 +14,35 @@ for (let i = 1; i <= 100; i++) {
     const fizzBuzz = "fizzBuzz";
     //none per i numeri che non sono multipli ne di 3 e ne di 5
     const none = "none";
+    //variabile per l'output nella console
+    let varConsole = "";
     //verifico se il numero sia multiplo di 3 e 5
     if((i % 3 === 0)&&(i % 5 === 0)) {
         //imposto la classe a fizzBuzz e invio il risultato
         result = fizzBuzz;
         gridString += `<div class="square ${result}">${fizzBuzz}</div>`
+        varConsole = fizzBuzz;
     }else
         //verifico se sia multiplo solo di 3 
         if(i % 3 === 0){
         //imposto la classe a fizz e invio il risultato
         result = fizz;
         gridString += `<div class="square ${result}">${fizz}</div>`
+        varConsole = fizz;
     }else 
         //verifico se sia multiplo solo di 5
         if(i % 5 === 0){
         //imposto la classe a buzz e invio il risultato
         result = buzz;
         gridString += `<div class="square ${result}">${buzz}</div>`
+        varConsole = buzz;
     }else{
         //non essendo multiplo di nessuno dei due lo scrivo normalmente
         result = none;
         gridString += `<div class="square ${result}">${i}</div>`
+        varConsole = i;
     }
-    console.log(`iterazione ${i}`, gridString);
+    console.log(`iterazione ${i}`, varConsole);
 }
 
 // Scrittura del valore finale in HTML
