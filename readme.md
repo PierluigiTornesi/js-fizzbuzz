@@ -21,7 +21,9 @@
  #### SOLUZIONE
 
 1. Impostare un ciclo per poter stampare in console i numeri da 1 a 100.
-2. Controllare se il numero stampato sia multiplo di 3 o di 5: 
-    1. Se il numero é multiplo di 3 stamperó Fizz
-    2. Se il numero é multiplo di 5 stanmperó Buzz
-    3. Se il numero é multiplo di entrambi stamperó FizzBuzz
+2. Controllare se il numero sia multiplo di 3 o di 5: 
+    1. Se il numero é multiplo di entrambi stamperó FizzBuzz
+    2. Altrimenti se il numero é multiplo di 3 stamperó Fizz
+    3. Altrimenti se il numero é multiplo di 5 stanmperó Buzz
+    4. Altrimenti stampo il numero
+3. Va avanti
